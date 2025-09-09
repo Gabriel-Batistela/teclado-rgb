@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ffffff;
+  flex-direction: column;
+
+}
+
+.container {
+  width: 60%;
+}
+
+.wrapper {
+  min-width: 750px;
+  max-width: 1000px;
+  padding: 25px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: -3px -3px 7px rgba(84, 84, 84, 0.451),
+    2px 2px 5px rgba(45, 45, 45, 0.288);
+}
+
+.wrapper .keys {
+  display: flex;
+  justify-content: center;
+
+}
+
+.wrapper .keys input {
+  height: 50px;
+  min-width: 50px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: -3px -3px 7px #f9000082,
+    2px 2px 5px rgba(255, 0, 0, 0.288);
+  margin: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.wrapper .keys input:focus {
+  font-size: 19px;
+  color: #d9ff00;
+  background: linear-gradient(50deg, #ee00b6, #009dff, #21f600, #f2ff00);
+  transform: translateY(1px);
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.wrapper .keys input[value="SPACE"] {
+  width: 60%;
+}
+
+.keys {
+  animation: animate 1.2s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
